@@ -17,7 +17,17 @@ namespace Task2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введiть розмiр масиву: ");
+            int N = Int32.Parse(Console.ReadLine());
+            MyArray ar = new MyArray(N);
 
+            ar.MinMax();
+            ar.Average();
+            Console.Write("Непарнi: ");
+            ar.Odd();
+
+            // Delay.
+            Console.ReadKey();
         }
     }
 }
